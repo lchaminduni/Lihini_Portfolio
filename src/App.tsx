@@ -256,7 +256,7 @@ export default function App() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: "YOUR_ACCESS_KEY_HERE", 
+          access_key: "9b85c786-08d7-437f-b8e9-3ea80350644a", 
           name: formData.name,
           email: formData.email,
           message: formData.message,
