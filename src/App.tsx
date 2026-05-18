@@ -35,7 +35,7 @@ const PERSONAL_INFO = {
   location: "Sri Lanka",
   linkedin: "https://www.linkedin.com/in/lihini-senevirathna",
   github: "https://github.com/lchaminduni",
-  image: process.env.PUBLIC_URL + "/me.png",
+  image: "/me.png", 
   summary: "Motivated and detail-oriented IT undergraduate with a strong foundation in software development and problem-solving. Currently reading for a Bachelor of Information Technology at the University of Moratuwa. Eager to gain hands-on industry experience through an internship, contribute to real-world projects, and continuously develop technical and professional skills in a dynamic environment.",
   goals: "My career goal is to become a full-stack software engineer, specializing in modern web technologies and robust backend systems. I am passionate about creating efficient, scalable applications that solve real-world problems."
 };
