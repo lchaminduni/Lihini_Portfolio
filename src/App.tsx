@@ -35,7 +35,7 @@ const PERSONAL_INFO = {
   location: "Sri Lanka",
   linkedin: "https://www.linkedin.com/in/lihini-senevirathna",
   github: "https://github.com/lchaminduni",
-  image: "/me.png", 
+  image: "me.png", 
   summary: "Motivated and detail-oriented IT undergraduate with a strong foundation in software development and problem-solving. Currently reading for a Bachelor of Information Technology at the University of Moratuwa. Eager to gain hands-on industry experience through an internship, contribute to real-world projects, and continuously develop technical and professional skills in a dynamic environment.",
   goals: "My career goal is to become a full-stack software engineer, specializing in modern web technologies and robust backend systems. I am passionate about creating efficient, scalable applications that solve real-world problems."
 };
@@ -256,7 +256,7 @@ export default function App() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: "9b85c786-08d7-437f-b8e9-3ea80350644a", 
+          access_key: "YOUR_ACCESS_KEY_HERE", 
           name: formData.name,
           email: formData.email,
           message: formData.message,
@@ -312,7 +312,7 @@ export default function App() {
                 Hire Me
               </a>
               <a 
-                href="/cv.pdf" 
+                href={`${import.meta.env.BASE_URL}cv.pdf`} 
                 download="Lihini_Senevirathna_CV.pdf"
                 className="px-8 py-4 glass text-gray-200 rounded-xl font-semibold transition-all hover:bg-white/5 flex items-center gap-2 active:scale-95"
               >
@@ -344,7 +344,7 @@ export default function App() {
                 
                 {/* Profile Image */}
                 <img 
-                  src={PERSONAL_INFO.image} 
+                  src={`${import.meta.env.BASE_URL}${PERSONAL_INFO.image}`} 
                   alt={PERSONAL_INFO.name} 
                   onLoad={() => setImageLoaded(true)}
                   onError={(e) => {
@@ -635,7 +635,7 @@ export default function App() {
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-gray-900/40">
         <div className="max-w-7xl mx-auto px-6">
-          <SectionTitle subtitle="Let's build something amazing together.">Contact Me</SectionTitle>
+          <SectionTitle subtitle="Let's build something amazing together.">Let's Talk Tech</SectionTitle>
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-8">
               <p className="text-gray-300 text-lg">
